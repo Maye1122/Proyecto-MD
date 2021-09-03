@@ -1,0 +1,174 @@
+:root {
+  --textWhite: white;
+  --h1H6: #111812;
+  --Bordes: #4aad52;
+  --p: #19241b;
+  --background: #507255;
+  --Button: #c5e063;
+  --input: #d9eb99;
+  --label: #c5e063;
+  --a: #152815;
+  --div: #4aad52;
+  --shadow1: #e6f2bb;
+  --shadow2: #6eb257;
+  --cancel: #ec5c52;
+}
+
+/* --estilo para el encabezado-- */
+
+.header {
+  box-shadow: 1px 1px var(--shadow2), -1em 0 1em var(--shadow1);
+}
+.header h1 {
+  color: var(--h1H6);
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.9em;
+}
+.header h1 cite {
+  font-size: 0.5em;
+  color: var(--h1H6);
+  font-family: "poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* --estilo para el encabezado-- */
+header i {
+  color: var(--h1H6);
+  font-family: poppins, sans-serif;
+  font-weight: 100;
+}
+
+/* -- esto es para el formulario del login -- */
+.container input {
+  border: 1px solid var(--Button);
+  font-family: "poppins";
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* modificacion de botones del login */
+button {
+  background: transparent;
+}
+
+span.usuario {
+  font-size: 1rem;
+  font-family: "poppins";
+  font-weight: bold;
+  color: var(--h1H6);
+}
+
+/* boton cancelar */
+.cancelbtn {
+  font-family: "poppins";
+  font-weight: 200;
+  background-color: var(--cancel);
+}
+span.indicacion {
+  font-family: "poppins";
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--h1H6);
+}
+
+/* -- form busqueda -- */
+
+input.placeholder {
+  border: 2px solid #4aad52;
+  background-color: white;
+  font-family: "poppins";
+}
+
+/* -- modificacion del nav -- */
+
+.topnav {
+  font-family: "libre Baskerville";
+  background-color: var(--background);
+}
+
+.dropdown .dropbtn {
+  font-size: 0.9rem;
+  color: whitesmoke;
+  background-color: var(--background);
+  font-family: "libre Baskerville";
+}
+.dropdown-content {
+  background-color: var(--shadow1);
+  box-shadow: 0px 8px 16px 0px rgba(197, 216, 26, 0.2);
+}
+
+.dropdown-content a {
+  color: var(--h1H6);
+  font-family: "poppins";
+  font-weight: 400;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: var(--shadow1);
+  color: var(--h1H6);
+}
+
+.dropdown-content a:hover {
+  background-color: var(--shadow2);
+}
+
+/* -- efectos galeria -- */
+
+.overlay {
+  background: rgba(2, 19, 24, 0.3);
+  box-shadow: 3px 3px var(--shadow2), -1em 0 0.4em var(--shadow1);
+}
+
+.overlay p {
+  color: white;
+  font-size: 1.3rem;
+  font-family: "libre Baskerville";
+  font-weight: 500;
+  text-shadow: 2px 2px 2px var(--h1H6);
+}
+
+/* -- footer-- */
+
+.contenedor {
+  background-color: var(--background);
+}
+
+.contenedor i {
+  font-size: 2rem;
+  color: var(--p);
+}
+
+.contenedor {
+  font-size: 0.8rem;
+  color: white;
+  font-family: "poppins";
+}
+.contenedor a {
+  font-size: 0.9rem;
+  color: white;
+}
+
+/* -- fuentes y estilo para la seccion de plantas --         */
+
+div.product-name h1 {
+  font-family: "libre baskerville";
+  font-style: italic;
+  font-size: 2rem;
+  color: var(--h1H6);
+}
+
+div.description p {
+  font-family: "poppins";
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--h1H6);
+}
+
+.product-card .right-column .btn {
+  background-color: var(--background);
+  color: whitesmoke;
+}
