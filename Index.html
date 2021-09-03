@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Prpotus.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,200;1,100;1,200;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/66a92f3a1a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Potus</title>
+  </head>
+
+  <body>
+    <!-- --encabezado pagina-- -->
+    <header class="header">
+      <a href="./Index.html"><img src="./imagesMD/poto5.jpg" alt="logo" /></a>
+      <h1>
+        "Siempre hay flores para el que desea verlas" <br />
+        <cite>Henri Matisse</cite>
+      </h1>
+
+      <!-- -- inicio login -- -->
+      <div class="logo">
+        <button onclick="document.getElementById('id01').style.display='block'">
+          <i class="fas fa-user"></i
+          ><span class="usuario">&nbsp; Login</span> &nbsp;
+        </button>
+
+        <div id="id01" class="modal">
+          <form
+            class="modal-content animate"
+            action="/action_page.php"
+            method="post"
+          >
+            <div class="imgcontainer">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="close"
+                title="Close Modal"
+                >&times;</span
+              >
+            </div>
+
+            <div class="container">
+              <label for="uname"><b>Nombre</b></label>
+              <input
+                type="text"
+                placeholder="Ingrese su nombre"
+                name="uname"
+                required
+              />
+
+              <label for="uname"><b>Apellido</b></label>
+              <input
+                type="text"
+                placeholder="Ingrese su Apellido"
+                name="uname"
+                required
+              />
+
+              <label for="uname"><b>Email</b></label>
+              <input
+                type="text"
+                placeholder="Ingrese su email"
+                name="uname"
+                required
+              />
+
+              <label for="psw"><b>Contraseña</b></label>
+              <input
+                type="password"
+                placeholder="Ingrese su Contraseña"
+                name="psw"
+                required
+              />
+
+              <button type="submit" class="botonRegistro">Registro</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember" />
+                Remember me
+              </label>
+            </div>
+
+            <div class="container" style="background-color: #f1f1f1">
+              <button
+                type="button"
+                onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn"
+              >
+                Cancel
+              </button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+
+        <!-- -- fin login  -- -->
+        &nbsp; &nbsp;&nbsp;
+        <a href="#"
+          ><i class="fas fa-shopping-cart"></i>
+          <span class="indicacion">Carrito</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- -- Menu de la pagina -- -->
+
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <div class="dropdown">
+          <button class="dropbtn">
+            Plantas
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="navContent">
+            <a href="./plantas.html"><p>Flores de estación</p></a>
+            <a href="./Creando.html"><p>Plantas de colección</p></a>
+            <a href="./Creando.html"><p>Cactus</p></a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            Accesorios
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="./Creando.html"><p>Guantes</p></a>
+            <a href="./Creando.html"><p>Tijeras para podar</p></a>
+            <a href="./Creando.html">Tierra</a>
+            <a href="./Creando.html">Soporte</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            Promociones
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="./Creando.html"><p>Planta del mes</p></a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Información
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="./Creando.html"><p>Equipo</p></a>
+            <a href="./Creando.html"><p>Contactenos</p></a>
+            <a href="./Creando.html"><p>Horarios</p></a>
+          </div>
+        </div>
+
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </nav>
+
+    <!-- -- div con buscador -- -->
+    <div class="fondo" style="height: 50%">
+      <input
+        id="buscador"
+        type="text"
+        name="search"
+        class="placeholder"
+        placeholder=" Busca tu planta preferida"
+        onkeyup="funcButton()"
+      />
+    </div>
+
+    <!-- -- Galeria Fotos --  -->
+    <!-- <div class="linea"></div> -->
+    <section class="section">
+      <div class="contenedorImg">
+        <div class="imagen">
+          <img
+            src="./imagesMD/redFlower.jpg"
+            alt="Amapola de campo"
+            class="imagen1"
+          />
+          <div class="overlay">
+            <p>Papaver rhoeas</p>
+          </div>
+        </div>
+        <div class="imagen">
+          <img src="./imagesMD/tulipan.jpg" alt="tulipan" class="imagen2" />
+          <div class="overlay"><p>Tulipanes</p></div>
+        </div>
+        <div class="imagen">
+          <img src="./imagesMD/potted.jpg" alt="Ficus" class="imagen3" />
+          <div class="overlay"><p>Ficus Lyrata</p></div>
+        </div>
+
+        <div class="imagen">
+          <img src="./imagesMD/cactus.jpg" alt="Cactus" class="imagen4" />
+          <div class="overlay"><p>Cactus</p></div>
+        </div>
+        <div class="imagen">
+          <img src="./imagesMD/gladiolus.jpg" alt="gladiolus" class="imagen5" />
+          <div class="overlay"><p>Gladiolos</p></div>
+        </div>
+        <div class="imagen">
+          <img src="./imagesMD/daisy.jpg" alt="Daisy Flower" class="imagen6" />
+          <div class="overlay"><p>Margaritas</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -- Este es el footer -- -->
+
+    <footer>
+      <div class="contenedor">
+        <div class="column1">
+          <h3>Nuestra empresa</h3>
+          <p>
+            Ofrecemos las plantas mas hermosas para decorar tus lugares
+            favoritos, tanto interiores como exteriores.
+          </p>
+        </div>
+        <div class="column2">
+          <h3>Siguenos en RRSS</h3>
+          <div>
+            <i class="fab fa-facebook"></i>&nbsp;&nbsp;<a href="./Creando.html"
+              >Siguenos en Facebook</a
+            >
+          </div>
+          <div>
+            <i class="fab fa-pinterest"></i>&nbsp;&nbsp;<a href="./Creando.html"
+              >Siguenos en Pinterest</a
+            >
+          </div>
+          <div>
+            <i class="fab fa-instagram"></i>&nbsp;&nbsp;<a href="./Creando.html"
+              >Siguenos en Instagram</a
+            >
+          </div>
+        </div>
+        <div class="column3">
+          <h3>Contactanos</h3>
+          <div>
+            <i class="far fa-envelope"></i
+            ><a href="./Creando.html">Escribenos</a>
+          </div>
+          <div>
+            <i class="fas fa-map-marker-alt"></i
+            ><label>Av. Italia 535 Montevideo, Uruguay</label>
+          </div>
+          <div>
+            <i class="fas fa-mobile-alt"></i><label>+598 99 222 222</label>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="Prpotus.js"></script>
+  </body>
+</html>
