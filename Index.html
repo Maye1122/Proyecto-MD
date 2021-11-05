@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -15,6 +15,10 @@
       src="https://kit.fontawesome.com/66a92f3a1a.js"
       crossorigin="anonymous"
     ></script>
+   
+   
+   
+   
 
     <title>Potus</title>
   </head>
@@ -22,7 +26,7 @@
   <body>
     <!-- --encabezado pagina-- -->
     <header class="header">
-      <a href="./Index.html"><img src="/imagesMD/poto5.jpg" alt="logo" /></a>
+      <a href="./Index.html"><img src="./imagesMD/poto5.jpg" alt="logo" /></a>
       <h1>
         "Siempre hay flores para el que desea verlas" <br />
         <cite>Henri Matisse</cite>
@@ -38,7 +42,7 @@
         <div id="id01" class="modal">
           <form
             class="modal-content animate"
-            action="/action_page.php"
+            action="/Index.html"
             method="post"
           >
             <div class="imgcontainer">
@@ -51,25 +55,26 @@
             </div>
 
             <div class="container">
-              <label for="uname"><b>Nombre</b></label>
+              <label for="uname"><b>Nombre usuario</b></label>
               <input
                 type="text"
-                placeholder="Ingrese su nombre"
+                id="nombreDeUsuario"
+                placeholder="Ingrese el nombre de usuario"
                 name="uname"
                 required
               />
 
-              <label for="uname"><b>Apellido</b></label>
+              <!-- <label for="uname"><b>Apellido</b></label>
               <input
                 type="text"
                 placeholder="Ingrese su Apellido"
                 name="uname"
                 required
-              />
+              /> -->
 
               <label for="uname"><b>Email</b></label>
               <input
-                type="text"
+                type="text" id="email"
                 placeholder="Ingrese su email"
                 name="uname"
                 required
@@ -77,17 +82,17 @@
 
               <label for="psw"><b>Contraseña</b></label>
               <input
-                type="password"
+                type="password" id="password"
                 placeholder="Ingrese su Contraseña"
                 name="psw"
                 required
               />
 
-              <button type="submit" class="botonRegistro">Registro</button>
-              <label>
+              <button type="submit" id="botonRegistro" class="botonRegistro" style="background-color: rgb(177, 240, 240);">Registro</button>
+              <!-- <label>
                 <input type="checkbox" checked="checked" name="remember" />
                 Remember me
-              </label>
+              </label> -->
             </div>
 
             <div class="container" style="background-color: #f1f1f1">
@@ -268,6 +273,7 @@
       </div>
     </footer>
 
-    <script src="Prpotus.js"></script>
+    <!-- <script src="Prpotus.js"></script> -->
+    <script src="./index.js"></script>
   </body>
 </html>

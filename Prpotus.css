@@ -191,7 +191,7 @@ span.psw {
 
 /* -- fondo de menu principal --   */
 .fondo {
-  background-image: url("/imagesMD/fondo.jpg");
+  background-image: url("./imagesMD/fondo.jpg");
   /* height: 10%; */
   background-position: center;
   background-repeat: no-repeat;
